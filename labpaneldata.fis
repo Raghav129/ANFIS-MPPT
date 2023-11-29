@@ -1,0 +1,53 @@
+[System]
+Name='labpaneldata'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[0.34146221813891 999.491620097705]
+NumMFs=3
+MF1='in1mf1':'trimf',[-499.233616721644 0.34146221813891 499.916541157922]
+MF2='in1mf2':'trimf',[0.341462218138929 499.916541157922 999.491620097705]
+MF3='in1mf3':'trimf',[499.916541157922 999.491620097705 1499.06669903749]
+
+[Input2]
+Name='input2'
+Range=[15.0104475071389 34.9895571727178]
+NumMFs=3
+MF1='in2mf1':'trimf',[5.02089267434942 15.0104475071389 25.0000023399284]
+MF2='in2mf2':'trimf',[15.0104475071389 25.0000023399284 34.9895571727178]
+MF3='in2mf3':'trimf',[25.0000023399284 34.9895571727178 44.9791120055073]
+
+[Output1]
+Name='output'
+Range=[14.7137535076954 22.0862447653907]
+NumMFs=9
+MF1='out1mf1':'constant',[22.086243880893]
+MF2='out1mf2':'constant',[18.3999991796776]
+MF3='out1mf3':'constant',[14.7137528963707]
+MF4='out1mf4':'constant',[22.0862448336941]
+MF5='out1mf5':'constant',[18.3999991376561]
+MF6='out1mf6':'constant',[14.7137534841568]
+MF7='out1mf7':'constant',[22.0862438140465]
+MF8='out1mf8':'constant',[18.3999991335508]
+MF9='out1mf9':'constant',[14.7137530230122]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 3 (1) : 1
+2 1, 4 (1) : 1
+2 2, 5 (1) : 1
+2 3, 6 (1) : 1
+3 1, 7 (1) : 1
+3 2, 8 (1) : 1
+3 3, 9 (1) : 1
